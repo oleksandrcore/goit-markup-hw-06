@@ -1,0 +1,63 @@
+:root {
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --slate: #434455;
+  --cloud: #f4f4fd;
+}
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  color: var(--navy-blue);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway, 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--navy-blue);
+  text-decoration: none;
+
+  span {
+    color: var(--iris);
+  }
+}
+
+.nav-link {
+  color: var(--navy-blue);
+  font-weight: 500;
+}
+
+.contact-item {
+  color: var(--slate);
+}
+
+.filter-button {
+  background-color: var(--cloud);
+  color: var(--iris);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.portfolio-card-header {
+  font-weight: 500;
+}
+
+.portfolio-card-tag {
+  color: var(--slate);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
