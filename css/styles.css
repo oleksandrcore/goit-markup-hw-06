@@ -3,6 +3,7 @@
   --iris: #4d5ae5;
   --slate: #434455;
   --cloud: #f4f4fd;
+  --ocean: #404BBF;
 }
 
 body {
@@ -21,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+footer {
+  background-color: var(--navy-blue);
+}
+
 .logo {
   font-family: Raleway, 'Helvetica Neue', sans-serif;
   font-weight: 800;
@@ -32,6 +37,10 @@ a {
   span {
     color: var(--iris);
   }
+}
+
+.footer-logo {
+  color: white;
 }
 
 .nav-link {
@@ -50,14 +59,46 @@ a {
   cursor: pointer;
 }
 
-.portfolio-card-header {
-  font-weight: 500;
+.filter-button:hover, .filter-button:focus {
+  background-color: var(--ocean);
+  color: white;
 }
 
-.portfolio-card-tag {
+.portfolio-card-header,
+.qualities-header,
+.team-member-header {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--navy-blue);
+}
+
+.portfolio-card-tag,
+.item-text {
   color: var(--slate);
 }
 
 .footer-text {
   color: var(--cloud);
+}
+
+.hero {
+  background-color: var(--navy-blue);
+}
+
+.hero-title {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-button {
+  font-size: inherit;
+  font-weight: 500;
+  background-color: var(--iris);
+  color: white;
+}
+
+.section-heading {
+  font-size: 36px;
 }
