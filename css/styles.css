@@ -39,6 +39,7 @@ a {
 
 footer {
   background-color: var(--navy-blue);
+  padding: 100px 156px;
 }
 
 img {
@@ -47,10 +48,9 @@ img {
 }
 
 .container {
-  max-width: 1470px;
-  min-width: 1470px;
-  padding-left: 156px;
-  padding-right: 156px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -93,10 +93,6 @@ img {
   color: white;
 }
 
-.footer-container {
-  padding: 100px 156px;
-}
-
 .filter-button {
   background-color: var(--cloud);
   color: var(--iris);
@@ -131,13 +127,9 @@ img {
   margin-top: 16px;
 }
 
-.hero-container {
+.hero {
   background-color: var(--navy-blue);
   padding: 188px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .hero-title {
@@ -146,30 +138,44 @@ img {
   font-weight: 700;
   color: white;
   max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
+  display: block;
   font-size: inherit;
   font-weight: 500;
   background-color: var(--iris);
   color: white;
   padding: 16px 32px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
 }
 
 .hero-button:hover, .hero-button:focus {
   background-color: var(--ocean);
 }
 
+.qualities {
+  padding: 120px 0;
+}
+
 .section-heading {
   font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--cornflower);
 
   nav {
     display: flex;
@@ -178,7 +184,7 @@ img {
 
   .nav-list {
     display: flex;
-    gap: 40px
+    gap: 40px;
   }
 
   .nav-link {
@@ -216,15 +222,8 @@ img {
   border-top: 0;
 }
 
-.section {
-  margin-bottom: 120px;
-}
-
-.business-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
+.business {
+  padding-bottom: 120px;
 }
 
 .business-list,
@@ -235,13 +234,9 @@ img {
   gap: 24px;
 }
 
-.team-container {
+.team {
   background-color: var(--cloud);
-  padding: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
+  padding: 120px 156px;
 }
 
 .team-member-text {
