@@ -5,6 +5,8 @@
   --cloud: #f4f4fd;
   --ocean: #404BBF;
   --cornflower: #e7e9fc;
+  --light-slate: #8E8F99;
+  --green: #31D0AA;
 }
 
 body {
@@ -154,6 +156,11 @@ img {
 
 .footer-container .social-links {
   gap: 16px;
+
+  .social-link:hover .icon,
+  .social-link:focus .icon {
+    fill: var(--green);
+  }
 }
 
 .hero {
@@ -354,12 +361,12 @@ img {
   align-items: center;
   justify-content: center;
   height: 88px;
-  border: 1px solid #8E8F99;
+  border: 1px solid var(--light-slate);
   border-radius: 4px;
 }
 
 .customers .icon {
-  fill: #8E8F99;
+  fill: var(--light-slate);
 }
 
 .customer-link:hover,
@@ -406,16 +413,29 @@ img {
   pointer-events: none;
 }
 
+.backdrop:not(.is-hidden) .modal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
 .modal {
   position: absolute;
   padding: 24px;
   background-color: white;
-  max-width: 480px;
-  width: 50%;
-  height: 75vh;
+  width: 408px;
+  min-height: 584px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.1);
+  overflow: auto;
+  transition: transform 0.25s, opacity 0.25s linear;
+  opacity: 0;
+
+  .modal-title {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 
   .modal-header {
     display: flex;
@@ -424,13 +444,144 @@ img {
   }
 
   .close-button {
-    border: 0;
-    width: 24px;
-    height: 24px;
+    border: none;
     background-color: transparent;
-    background-image: url(../images/close.svg);
-    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
     cursor: pointer;
-    fill: red;
+
+    .icon {
+      height: 24px;
+      width: 24px;
+      fill: var(--navy-blue);
+      border: 1px solid #0000001A;
+      background-color: var(--cornflower);
+      border-radius: 50%;
+      padding: 7px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus {
+        background-color: var(--ocean);
+        fill: white;
+      }
+    }
+  }
+
+  .feedback-form {
+    .form-label {
+      font-size: 12px;
+      color: var(--light-slate)
+    }
+
+    .form-input {
+      font-size: 12px;
+      padding: 8px 8px 8px 32px;
+      border: 1px solid #2E2F4266;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 4px;
+      min-height: 40px;
+      width: 100%;
+      color: var(--navy-blue);
+      outline: none;
+    }
+
+    .form-input.form-textarea {
+      padding: 8px 8px 8px 16px
+    }
+
+    .form-field {
+      position: relative;
+      margin-bottom: 8px;
+
+      .icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+        fill: var(--navy-blue);
+      }
+    }
+
+    .form-field:hover,
+    .form-field:focus {
+      .form-input {
+        border-color: var(--iris);
+      }
+
+      .icon {
+        fill: var(--iris);
+      }
+    }
+
+    .form-checkbox {
+      height: 16px;
+      width: 16px;
+      border: 1px solid #2E2F4266;
+
+      &:checked {
+        accent-color: var(--ocean);
+      }
+    }
+
+    .checkbox-label {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    .policy {
+      color: var(--iris);
+      text-decoration: underline;
+    }
+
+    .submit-button {
+      padding: 16px 72px;
+      background-color: #4D5AE5;
+      color: white;
+      box-shadow: none;
+      border: none;
+      border-radius: 4px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  .form-input {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    min-width: 264px;
+    height: 40px;
+    box-shadow: none;
+    border-radius: 4px;
+  }
+
+  .form-input::placeholder {
+    color: white;
+  }
+
+  .subscribe-form-submit {
+    padding: 8px 24px;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--iris);
+    color: white;
+    fill: white;
+  }
+
+  .subscribe-form-submit:hover, .subscribe-form-submit:focus {
+    background-color: var(--ocean);
   }
 }
