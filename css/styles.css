@@ -3,10 +3,10 @@
   --iris: #4d5ae5;
   --slate: #434455;
   --cloud: #f4f4fd;
-  --ocean: #404BBF;
+  --ocean: #404bbf;
   --cornflower: #e7e9fc;
-  --light-slate: #8E8F99;
-  --green: #31D0AA;
+  --light-slate: #8e8f99;
+  --green: #31d0aa;
 }
 
 body {
@@ -62,7 +62,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-item:hover, contact-item:focus {
+.contact-item:hover,
+contact-item:focus {
   color: var(--ocean);
 }
 
@@ -107,11 +108,15 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover, .filter-button:focus {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--ocean);
   color: white;
   border: 1px solid var(--ocean);
-  box-shadow: 0 2px 2px 0 #0000001F, 0 2px 1px 0 #00000014, 0 3px 1px 0 #0000001A;
+  box-shadow:
+    0 2px 2px 0 #0000001f,
+    0 2px 1px 0 #00000014,
+    0 3px 1px 0 #0000001a;
 }
 
 .portfolio-card-header,
@@ -165,7 +170,8 @@ img {
 
 .hero {
   background-color: var(--navy-blue);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -194,7 +200,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover, .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--ocean);
 }
 
@@ -239,7 +246,7 @@ img {
     }
 
     &.current::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       height: 4px;
@@ -250,7 +257,8 @@ img {
     }
   }
 
-  .nav-link:hover, .nav-link:focus {
+  .nav-link:hover,
+  .nav-link:focus {
     color: var(--ocean);
   }
 }
@@ -271,7 +279,7 @@ img {
   justify-content: center;
   margin-top: 72px;
   flex-wrap: wrap;
-  row-gap: 48px
+  row-gap: 48px;
 }
 
 .portfolio-list-item-img {
@@ -281,13 +289,17 @@ img {
 }
 
 .team-member-list-item,
-.portfolio-list-item:hover, .portfolio-list-item:focus {
-  box-shadow: 0 2px 1px 0 #2E2F4214, 0 1px 1px 0 #2E2F4229, 0 1px 6px 0 #2E2F4214;
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow:
+    0 2px 1px 0 #2e2f4214,
+    0 1px 1px 0 #2e2f4229,
+    0 1px 6px 0 #2e2f4214;
 }
 
 .portfolio-list-item-text {
   padding: 32px 16px;
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-top: 0;
 }
 
@@ -328,7 +340,7 @@ img {
 }
 
 .team .social-links {
-  gap: 24px
+  gap: 24px;
 }
 
 .social-links {
@@ -428,7 +440,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   overflow: auto;
-  transition: transform 0.25s, opacity 0.25s linear;
+  transition:
+    transform 0.25s,
+    opacity 0.25s linear;
   opacity: 0;
 
   .modal-title {
@@ -453,13 +467,16 @@ img {
       height: 24px;
       width: 24px;
       fill: var(--navy-blue);
-      border: 1px solid #0000001A;
+      border: 1px solid #0000001a;
       background-color: var(--cornflower);
       border-radius: 50%;
       padding: 7px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: var(--ocean);
         fill: white;
       }
@@ -469,13 +486,13 @@ img {
   .feedback-form {
     .form-label {
       font-size: 12px;
-      color: var(--light-slate)
+      color: var(--light-slate);
     }
 
     .form-input {
       font-size: 12px;
       padding: 8px 8px 8px 32px;
-      border: 1px solid #2E2F4266;
+      border: 1px solid #2e2f4266;
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       border-radius: 4px;
       min-height: 40px;
@@ -485,7 +502,7 @@ img {
     }
 
     .form-input.form-textarea {
-      padding: 8px 8px 8px 16px
+      padding: 8px 8px 8px 16px;
     }
 
     .form-field {
@@ -516,7 +533,7 @@ img {
     .form-checkbox {
       height: 16px;
       width: 16px;
-      border: 1px solid #2E2F4266;
+      border: 1px solid #2e2f4266;
 
       &:checked {
         accent-color: var(--ocean);
@@ -538,7 +555,7 @@ img {
 
     .submit-button {
       padding: 16px 72px;
-      background-color: #4D5AE5;
+      background-color: #4d5ae5;
       color: white;
       box-shadow: none;
       border: none;
@@ -581,7 +598,8 @@ img {
     fill: white;
   }
 
-  .subscribe-form-submit:hover, .subscribe-form-submit:focus {
+  .subscribe-form-submit:hover,
+  .subscribe-form-submit:focus {
     background-color: var(--ocean);
   }
 }
