@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,17 @@
       <div class="container nav-container">
         <nav>
           <a href="./index.html" class="logo"> <span>Web</span>studio </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu button"
+          >
+            <svg class="menu-toggle-icon" width="32" height="22">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+
           <ul class="nav-list">
             <li>
               <a href="./index.html" class="nav-link current">Studio</a>
@@ -55,7 +67,7 @@
       </section>
 
       <section class="section qualities">
-        <div class="container">
+        <div class="container qualities-container">
           <ul class="qualities-list">
             <li>
               <div class="quality-header">
@@ -410,6 +422,60 @@
         </div>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" aria-label="Close menu button">
+        <svg class="menu-toggle-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-button-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="" class="link">Studio</a>
+        </li>
+        <li>
+          <a href="" class="link active">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li>
+          <a class="link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <svg class="icon">
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-link">
+          <svg class="icon">
+            <use href="./images/icons.svg#icon-twitter-2"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-link">
+          <svg class="icon">
+            <use href="./images/icons.svg#icon-facebook-2"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-link">
+          <svg class="icon">
+            <use href="./images/icons.svg#icon-linkedin-2"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
