@@ -143,7 +143,9 @@
           <h2 class="section-heading">Our team</h2>
           <ul class="team-list">
             <li class="team-member-list-item">
-              <img src="images/photo.jpg" alt="Mark photo" width="264" height="260" />
+
+               <img src="images/mark@x1.jpg" srcset="images/mark@x1.jpg 1x, images/mark@x2.jpg 2x"
+                   alt="Mark photo" width="264" height="260" />
               <div class="team-member-text">
                 <h3 class="team-member-header">Mark Guerrero</h3>
                 <p class="item-text">Product designer</p>
@@ -172,7 +174,8 @@
               </div>
             </li>
             <li class="team-member-list-item">
-              <img src="images/photo1.jpg" alt="Tom photo" width="264" height="260" />
+              <img src="images/tom@x1.jpg" srcset="images/tom@x1.jpg 1x, images/tom@x2.jpg 2x"
+                   alt="Tom photo" width="264" height="260" />
               <div class="team-member-text">
                 <h3 class="team-member-header">Tom Ford</h3>
                 <p class="item-text">Frontend Developer</p>
@@ -201,7 +204,8 @@
               </div>
             </li>
             <li class="team-member-list-item">
-              <img src="images/photo2.jpg" alt="Camila photo" width="264" height="260" />
+              <img src="images/camila@x1.jpg" srcset="images/camila@x1.jpg 1x, images/camila@x2.jpg 2x"
+                   alt="Camila photo" width="264" height="260" />
               <div class="team-member-text">
                 <h3 class="team-member-header">Camila Garcia</h3>
                 <p class="item-text">Marketing</p>
@@ -230,7 +234,8 @@
               </div>
             </li>
             <li class="team-member-list-item">
-              <img src="images/photo3.jpg" alt="Daniel photo" width="264" height="260" />
+              <img src="images/daniel@x1.jpg" srcset="images/daniel@x1.jpg 1x, images/daniel@x2.jpg 2x"
+                   alt="Daniel photo" width="264" height="260" />
               <div class="team-member-text">
                 <h3 class="team-member-header">Daniel Wilson</h3>
                 <p class="item-text">UI Designer</p>
@@ -322,7 +327,7 @@
             growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social-links-container">
           <p class="footer-title">Social media</p>
           <div class="social-links">
             <a href="#" class="social-link">
@@ -347,7 +352,7 @@
             </a>
           </div>
         </div>
-        <div>
+        <div class="subscribe-container">
           <p class="footer-title">Subscribe</p>
           <form class="subscribe-form" name="subscribe_form" autocomplete="off">
             <input class="form-input" name="subscribe" type="email" placeholder="E-mail" />
@@ -425,17 +430,17 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu" aria-label="Close menu button">
-        <svg class="menu-toggle-icon" width="28" height="28">
+        <svg class="menu-toggle-icon-close">
           <use href="./images/icons.svg#icon-button-close"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu">
         <li>
-          <a href="" class="link">Studio</a>
+          <a href="" class="link active">Studio</a>
         </li>
         <li>
-          <a href="" class="link active">Portfolio</a>
+          <a href="" class="link">Portfolio</a>
         </li>
         <li>
           <a href="" class="link">Contacts</a>
